@@ -1,0 +1,11 @@
+[api]
+  enabled = true
+  address = "127.0.0.1:8686"
+
+[sources.in]
+  type = "stdin"
+
+[sinks.out]
+  inputs = ["in"]
+  type = "console"
+  encoding.codec = "json"

@@ -1,0 +1,3 @@
+---
+vector_service_name: vector
+vector_extract_dir: /tmp/vector-extract

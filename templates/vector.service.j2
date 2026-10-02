@@ -1,0 +1,14 @@
+[Unit]
+Description=Vector
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+User={{ vector_user }}
+Group={{ vector_group }}
+ExecStart={{ vector_bin }} --config {{ vector_config_dir }}/vector.toml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
