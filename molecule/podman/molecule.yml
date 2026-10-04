@@ -1,0 +1,20 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: podman
+  options:
+    managed: true
+platforms:
+  - name: instance
+    image: ubuntu:latest
+    pre_build_image: true
+    command: sleep infinity
+    cgroup_manager: cgroupfs
+    storage_driver: overlay
+provisioner:
+  name: ansible
+  playbooks:
+    prepare: prepare.yml
+verifier:
+  name: ansible

@@ -1,0 +1,14 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Check vector binary exists
+      ansible.builtin.stat:
+        path: /usr/local/bin/vector
+      register: vector_bin
+
+    - name: Assert vector binary exists
+      ansible.builtin.assert:
+        that:
+          - vector_bin.stat.exists
