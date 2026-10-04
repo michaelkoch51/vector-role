@@ -42,4 +42,14 @@ https://github.com/michaelkoch51/vector-role
 
 ## Скриншоты
 
-См. папку `screenshots/` (или приложены отдельно к сдаче).
+![](https://github.com/user-attachments/assets/879db387-16f1-4041-afc5-b6512ffa3b72)
+
+![](https://github.com/user-attachments/assets/7582adee-b990-4532-9129-0f555936bc52)
+
+![](https://github.com/user-attachments/assets/485a771c-3e41-4ac8-8768-a8f064028dbb)
+
+![](https://github.com/user-attachments/assets/6aaaa9e3-f79e-44f8-a7ac-5530a5993a5c)
+
+![](https://github.com/user-attachments/assets/39684e66-872f-4633-b76f-88a428c5f3d5)
+
+![](https://github.com/user-attachments/assets/91fb0a4b-b2b2-427f-9f11-d1a800ad80e9)
