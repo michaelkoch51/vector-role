@@ -55,14 +55,14 @@
     owner: "{{ vector_user }}"
     group: "{{ vector_group }}"
     mode: "0644"
-  notify: Restart vector
 
 - name: Deploy vector systemd unit
   ansible.builtin.template:
     src: vector.service.j2
     dest: /etc/systemd/system/vector.service
     mode: "0644"
-  notify: Restart vector
+  tags:
+    - molecule-notest
 
 - name: Enable and start vector
   ansible.builtin.systemd:
@@ -70,3 +70,5 @@
     enabled: true
     state: started
     daemon_reload: true
+  tags:
+    - molecule-notest

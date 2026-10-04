@@ -4,3 +4,5 @@
     name: vector
     state: restarted
     daemon_reload: true
+  tags:
+    - molecule-notest

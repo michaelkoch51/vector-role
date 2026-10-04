@@ -1,0 +1,18 @@
+---
+driver:
+  name: docker
+platforms:
+  - name: ubuntu-instance
+    image: ubuntu:latest
+    pre_build_image: true
+    command: sleep infinity
+  - name: oraclelinux-instance
+    image: oraclelinux:8
+    pre_build_image: true
+    command: sleep infinity
+provisioner:
+  name: ansible
+  playbooks:
+    prepare: prepare.yml
+verifier:
+  name: ansible
